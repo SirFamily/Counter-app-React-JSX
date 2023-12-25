@@ -1,6 +1,11 @@
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const audio = new Audio();
-audio.src = "./pop.mp3";
+const pop = new Audio();
+pop.src = "./pop.mp3";
+const del = new Audio();
+del.src = "./del.mp3";
+const boom = new Audio();
+boom.src = "./boom.mp3";
+
 function MyApp() {
     const [sum, setSum] = React.useState(0);
 
@@ -10,7 +15,7 @@ function MyApp() {
 
     return (
         <div>
-            <h1>Hello World!</h1>
+            <h1>Thiraphat Chonlathep</h1>
             <p>Sum = {sum}</p>
             <button onClick={() => alert('Coming soon...')}>ADD Counter</button>
             <div>
@@ -34,14 +39,11 @@ function Counter({ updateSum }) {
     return (
         <div className="counter">
             <div className="controller">
-                <button onClick={() => {
-                    updateCounter(1);
-                    audio.play();
-                }}>+</button>
+                <button onClick={() => { updateCounter(1); pop.play(); }}>+</button>
                 <button>{count}</button>
-                <button onClick={() => {updateCounter(-1); audio.play();}}>-</button>
-                <button onClick={() => updateCounter(-count)}>C</button>
-                <button onClick={() => alert('อย่าพึงลบเลยครับ มีอันเดียวเอง')}>X</button>
+                <button onClick={() => { updateCounter(-1); pop.play(); }}>-</button>
+                <button onClick={() => { updateCounter(-count); del.play(); }}>C</button>
+                <button onClick={() => { boom.play(); alert('อย่าพึงลบเลยครับ มีอันเดียวเอง'); }}>X</button>
             </div>
         </div>
     );
