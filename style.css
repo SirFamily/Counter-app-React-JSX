@@ -68,5 +68,7 @@ span {
 
 button:active {
     transform: scale(0.97);
-    background-color: #505050;
+    background-color: #d1d1d1;
+    color: #000;
+    font-size: 15px;
 }
