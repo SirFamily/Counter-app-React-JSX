@@ -43,7 +43,7 @@ function Counter({ updateSum }) {
                 <button>{count}</button>
                 <button onClick={() => { updateCounter(-1); pop.play(); }}>-</button>
                 <button onClick={() => { updateCounter(-count); del.play(); }}>C</button>
-                <button onClick={() => { boom.play(); alert('อย่าพึงลบเลยครับ มีอันเดียวเอง'); }}>X</button>
+                <button onClick={() => { boom.play(); alert("Don't delete it, please. It's the only one I have."); }}>X</button>
             </div>
         </div>
     );
