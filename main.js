@@ -41,7 +41,7 @@ function Counter({ updateSum }) {
                 <button>{count}</button>
                 <button onClick={() => {updateCounter(-1); audio.play();}}>-</button>
                 <button onClick={() => updateCounter(-count)}>C</button>
-                <button>X</button>
+                <button onClick={() => alert('อย่าพึงลบเลยครับ มีอันเดียวเอง')}>X</button>
             </div>
         </div>
     );
