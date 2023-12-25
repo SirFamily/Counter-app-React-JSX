@@ -65,3 +65,8 @@ span {
     transform: scale(1.03);
     color: #cf4141;
 }
+
+button:active {
+    transform: scale(0.97);
+    background-color: #505050;
+}

@@ -33,9 +33,9 @@ function Counter({ updateSum }) {
   return (
     <div className="counter">
       <div className="controller">
-        <button onClick={() => updateCounter(1)}>Increment</button>
+        <button onClick={() => updateCounter(1)}>+</button>
         <button>{count}</button>
-        <button onClick={() => updateCounter(-1)}>Decrement</button>
+        <button onClick={() => updateCounter(-1)}>-</button>
         <button onClick={() => updateCounter(-count)}>C</button>
         <button>X</button>
       </div>
